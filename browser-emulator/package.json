@@ -12,7 +12,7 @@
     "//postinstall": "rm -f ./node_modules/typescript/lib/lib.dom.d.ts",
     "start:prod": "EMULATED_USER_TYPE=NONE node ./dist/server.js",
     "start:prod-firefox": "EMULATED_USER_TYPE=NONE REAL_DRIVER=firefox node ./dist/server.js",
-    "start:prod-chrome": "EMULATED_USER_TYPE=NONE REAL_DRIVER=chrome node ./dist/server.js",
+    "start:prod-chrome": "EMULATED_USER_TYPE=NONE REAL_DRIVER=chrome FAKE_AUDIO_WAV=/home/ubuntu/openvidu-loadtest/browser-emulator/test_openvidu.wav node ./dist/server.js",
     "start:prod-canvas": "EMULATED_USER_TYPE=NODE_WEBRTC_CANVAS node ./dist/server.js",
     "start:prod-kms": "EMULATED_USER_TYPE=KMS node ./dist/server.js",
     "start:dev-kms": "APPLICATION_MODE=DEVELOPMENT EMULATED_USER_TYPE=KMS ts-node ./src/server.ts",
