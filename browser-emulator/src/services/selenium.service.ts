@@ -36,7 +36,7 @@ export class SeleniumService {
                 });
             }
             // Start fake webcam for media capture
-            await startFakeMediaDevices(videoPath, audioPath);
+            // await startFakeMediaDevices(videoPath, audioPath);
             // Start selenium
             SeleniumService.instance = new SeleniumService();
         }

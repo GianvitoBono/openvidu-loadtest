@@ -42,6 +42,8 @@ export class RealBrowserService {
 			this.chromeOptions.addArguments(
 				'--disable-dev-shm-usage',
 				'--use-fake-ui-for-media-stream',
+				'--use-fake-device-for-media-stream',
+				`--use-file-for-fake-audio-capture=${process.env.FAKE_AUDIO_WAV}`,
 				"--no-sandbox",
 				"--disable-gpu"
 			);
